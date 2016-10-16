@@ -16,7 +16,7 @@ Deezer.prototype.getArtist = function(id) {
     return rp({url: this.apiUrl + url, json:true});
 }
 
-Deezer.prototype.findTracks = function(options, index = 0, order = null) {
+Deezer.prototype.findTracks = function(options, index, order) {
     var url = 'search?q=';
     var query = '';
     if (typeof options === 'object') {
@@ -34,14 +34,14 @@ Deezer.prototype.findTracks = function(options, index = 0, order = null) {
     return rp({url: this.apiUrl + url, json:true});
 }
 
-Deezer.prototype.findAlbums = function(query, index = 0) {
+Deezer.prototype.findAlbums = function(query, index) {
     var url = 'search/album?q=' + query;
     if (index !== 0) url = url + '&index=' + index;
 
     return rp({url: this.apiUrl + url, json:true});
 }
 
-Deezer.prototype.findArtists = function(query, index = 0) {
+Deezer.prototype.findArtists = function(query, index) {
     var url = 'search/artist?q=' + query;
     if (index !== 0) url = url + '&index=' + index;
 

@@ -30,9 +30,9 @@ dz.findTracks({album: 'good things'}).then(function(result) {
 ## Available methods
 * getAlbum(albumId)
 * getArtist(artistId)
-* findTracks(options, index = 0, order = null)
-* findAlbums(query, index = 0)
-* findArtists(query, index = 0)
+* findTracks(options, index, order)
+* findAlbums(query, index)
+* findArtists(query, index)
 
 ## Testing
     npm test
