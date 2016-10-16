@@ -1,6 +1,6 @@
 {
   "name": "deezer-node-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wrapper for the Deezer API",
   "main": "src/index.js",
   "scripts": {
@@ -11,6 +11,14 @@
     "deezer",
     "api"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acostes/deezer-node-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acostes/deezer-node-api/issues"
+  },
+  "homepage": "https://github.com/acostes/deezer-node-api#readme",
   "dependencies": {
     "request-promise": "~4.1.1",
     "request": "~2.75.0"
