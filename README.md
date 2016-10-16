@@ -8,7 +8,7 @@ This is *Nodejs* wrapper for the [Deezer API](http://developers.deezer.com/api) 
 
 ## Usage example
 ``` JavaScript
-var Deezer = require('deezer-node-ap');
+var Deezer = require('deezer-node-api');
 var dz = new Deezer();
 
 dz.getAlbum(302127).then(function(album) {
