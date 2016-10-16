@@ -16,4 +16,36 @@ Deezer.prototype.getArtist = function(id) {
     return rp({url: this.apiUrl + url, json:true});
 }
 
+Deezer.prototype.findTracks = function(options, index = 0, order = null) {
+    var url = 'search?q=';
+    var query = '';
+    if (typeof options === 'object') {
+        for (var key in options) {
+            query = query + key + ':"' + options[key] + '" ';
+        }
+    } else {
+        query = options;
+    }
+    url = url + query;
+
+    if (index !== 0) url = url + '&index=' + index;
+    if (order) url = url + '&order=' + order;
+
+    return rp({url: this.apiUrl + url, json:true});
+}
+
+Deezer.prototype.findAlbums = function(query, index = 0) {
+    var url = 'search/album?q=' + query;
+    if (index !== 0) url = url + '&index=' + index;
+
+    return rp({url: this.apiUrl + url, json:true});
+}
+
+Deezer.prototype.findArtists = function(query, index = 0) {
+    var url = 'search/artist?q=' + query;
+    if (index !== 0) url = url + '&index=' + index;
+
+    return rp({url: this.apiUrl + url, json:true});
+}
+
 module.exports = Deezer;
