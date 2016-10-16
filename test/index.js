@@ -6,7 +6,7 @@ var dz = new Deezer();
 describe('Load module', function() {
     it('Load', function() {
         test.object(dz)
-            .isInstanceOf(Deezer)
+            .isInstanceOf(Deezer);
     });
 });
 
@@ -49,7 +49,7 @@ describe('Album', function() {
                 .object(album.tracks)
                     .hasProperty('data');
 
-        }).finally(done)
+        }).finally(done);
     });
 });
 
@@ -69,8 +69,8 @@ describe('Artist', function() {
                     .hasProperty('picture_xl')
                     .hasProperty('nb_album')
                     .hasProperty('nb_fan')
-                    .hasProperty('radio')
-        }).finally(done)
+                    .hasProperty('radio');
+        }).finally(done);
     });
 });
 
@@ -92,9 +92,9 @@ describe('Find', function() {
                         .hasProperty('explicit_lyrics')
                         .hasProperty('preview')
                         .hasProperty('artist')
-                        .hasProperty('album')
+                        .hasProperty('album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find tracks by artist', function(done) {
@@ -113,9 +113,9 @@ describe('Find', function() {
                         .hasProperty('explicit_lyrics')
                         .hasProperty('preview')
                         .hasProperty('artist')
-                        .hasProperty('album')
+                        .hasProperty('album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find tracks by album', function(done) {
@@ -134,9 +134,9 @@ describe('Find', function() {
                         .hasProperty('explicit_lyrics')
                         .hasProperty('preview')
                         .hasProperty('artist')
-                        .hasProperty('album')
+                        .hasProperty('album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find tracks by track name', function(done) {
@@ -155,9 +155,9 @@ describe('Find', function() {
                         .hasProperty('explicit_lyrics')
                         .hasProperty('preview')
                         .hasProperty('artist')
-                        .hasProperty('album')
+                        .hasProperty('album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find tracks by label', function(done) {
@@ -176,9 +176,9 @@ describe('Find', function() {
                         .hasProperty('explicit_lyrics')
                         .hasProperty('preview')
                         .hasProperty('artist')
-                        .hasProperty('album')
+                        .hasProperty('album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find albums', function(done) {
@@ -200,9 +200,9 @@ describe('Find', function() {
                         .hasProperty('tracklist')
                         .hasProperty('explicit_lyrics')
                         .hasProperty('artist')
-                        .hasProperty('type', 'album')
+                        .hasProperty('type', 'album');
             });
-        }).finally(done)
+        }).finally(done);
     });
 
     it('Find artists', function(done) {
@@ -222,8 +222,8 @@ describe('Find', function() {
                         .hasProperty('nb_fan')
                         .hasProperty('radio')
                         .hasProperty('tracklist')
-                        .hasProperty('type', 'artist')
+                        .hasProperty('type', 'artist');
             });
-        }).finally(done)
+        }).finally(done);
     });
 });

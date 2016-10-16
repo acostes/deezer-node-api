@@ -1,5 +1,6 @@
 # Deezer API wrapper
-[![Build pass](https://travis-ci.org/acostes/deezer-node-api.svg)](https://travis-ci.org/acostes/deezer-node-api?branch=master)
+[![NPM version](https://img.shields.io/npm/v/deezer-node-api.svg?style=flat-square)](https://www.npmjs.com/package/deezer-node-api)
+[![Build pass](https://img.shields.io/travis/acostes/deezer-node-api/master.svg?style=flat-square)](https://travis-ci.org/acostes/deezer-node-api?branch=master)
 
 This is *Nodejs* wrapper for the [Deezer API](http://developers.deezer.com/api) that return promises.
 

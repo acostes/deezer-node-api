@@ -4,7 +4,8 @@
   "description": "Wrapper for the Deezer API",
   "main": "src/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test"
+    "test": "./node_modules/.bin/mocha test",
+    "lint": "./node_modules/.bin/eslint src"
   },
   "keywords": [
     "deezer",
@@ -12,10 +13,13 @@
   ],
   "dependencies": {
     "request-promise": "~4.1.1",
-    "request": "~2.75.0",
-    "mocha": "~3.1.2",
-    "unit.js": "~2.0.0"
+    "request": "~2.75.0"
   },
   "author": "Arnaud Costes <arnaud.costes@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "mocha": "~3.1.2",
+    "unit.js": "~2.0.0"
+  }
 }
