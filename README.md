@@ -8,7 +8,7 @@ This is *Nodejs* wrapper for the [Deezer API](http://developers.deezer.com/api) 
     npm install deezer-node-api --save
 
 ## Usage example
-``` JavaScript
+```js
 var Deezer = require('deezer-node-api');
 var dz = new Deezer();
 
