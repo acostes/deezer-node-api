@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/acostes/deezer-node-api#readme",
   "dependencies": {
-    "request": "~2.75.0",
+    "request": "~2.83.0",
     "request-promise": "~4.1.1"
   },
   "author": "Arnaud Costes <arnaud.costes@gmail.com>",
