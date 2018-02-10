@@ -4,6 +4,11 @@ function Deezer() {
     this.apiUrl = 'https://api.deezer.com/';
 }
 
+Deezer.prototype.getTrack = function(id) {
+    var url = 'track/' + id;
+    return rp({url: this.apiUrl + url, json:true});
+};
+
 Deezer.prototype.getAlbum = function(id) {
     var url = 'album/' + id;
     return rp({url: this.apiUrl + url, json:true});
