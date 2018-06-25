@@ -1,6 +1,6 @@
 {
   "name": "deezer-node-api",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Wrapper for the Deezer API",
   "main": "src/index.js",
   "bin": {
